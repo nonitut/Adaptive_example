@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p , h1, h2, h3, h4, h5 {
+    font-family: 'CarlaSansLight';
+}
+
+
+header, nav, section, article, aside, footer {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #BB92FF;
+    border-radius: 5px;
+    background-color: rgb(254, 242, 255);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:  rgba(119, 70, 199);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Чтобы заголовок оставался поверх других элементов */
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav a {
+    margin: 5px;
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(187, 98, 255)212;
+    background-color: rgb(173, 228, 174)ddd;
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+
+
+
+
+.adaptiveone{
+    position: relative;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 120%;
+    border: 3px solid rgb(118, 40, 177)212;
+    border-radius: 2px;
+    color: rgb(252, 150, 201);
+    appearance: none;
+    background: url('arrow-down.png') no-repeat right 30px center; /* добавляем стрелку в качестве фона */
+    background-size: 30px; /* размер стрелки */
+    cursor: pointer;
+}
+
+
+
+article {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 5% 0;
+}
+
+aside {
+    
+    text-align: center;
+    margin-top: 20px; /* добавим отступ сверху для красоты */
+}
+
+
+footer {
+    text-align: center;
+}

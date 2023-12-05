@@ -1,0 +1,50 @@
+@media screen and (min-width: 600px) {
+   article {
+      flex: 0 0 30%;
+   }
+   
+}
+
+@media screen and (max-width: 600px) {
+   nav {
+         flex-basis: 100%;
+         justify-content: flex-start;
+   }
+
+   nav select {
+         width: 100%;
+         margin: 5px;
+         padding: 8px;
+         border-radius: 5px;
+   }
+
+   nav a{
+      display: none;
+   }
+
+   .adaptiveone{
+      display: block;
+
+   }
+
+   footer {
+   text-align: center;
+   }
+
+
+}
+
+@media screen and (min-width: 900px) {
+   article {
+      flex: 0 0 20%;
+   }
+
+   /* 
+   - Это устанавливает стиль flex-контейнера для элемента
+   - Первое значение (0) указывает, что элемент не может увеличиваться в размере
+   - Второе значение (0) означает, что элемент не может уменьшаться в размере
+   - Третье значение (20%) задает начальный размер элемента внутри flex-контейнера
+   */
+
+}
+

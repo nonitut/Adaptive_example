@@ -1,1 +1,1 @@
-# Adaptive_example
+# Шаблон 
